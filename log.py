@@ -13,6 +13,6 @@ class Log():
         self.message = message
         
     def __str__(self):
-        return f"[{self.time.strftime("%H:%M:%S")}] | {self.level} | {self.message}"
+        return f"[{self.time.strftime("%H:%M:%S")}] | {self.level.name.upper()} | {self.message}"
     
     
